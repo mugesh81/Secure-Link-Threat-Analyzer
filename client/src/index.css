@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-cyber-darker text-gray-100;
+  }
+}
+
+@layer components {
+  .cyber-card {
+    @apply bg-gradient-to-br from-cyber-dark to-cyber-darker border border-cyber-blue/20 rounded-xl shadow-2xl;
+  }
+  
+  .cyber-button {
+    @apply px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 active:scale-95;
+  }
+  
+  .threat-meter {
+    @apply h-2 rounded-full overflow-hidden bg-gray-800;
+  }
+}
